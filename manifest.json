@@ -1,0 +1,20 @@
+{
+    "manifest_version": 3,
+    "name": "Schul-Netz Average Grade Calculator",
+    "version": "1.0",
+    "description": "Calculates grade average for Schul-Netz as well as other functions and quality of life improvements.",
+    "icons": {
+        "16": "icon16.png",
+        "48": "icon48.png",
+        "128": "icon128.png"
+    },
+    "content_scripts": [
+        {
+            "matches": [
+                "https://www.schul-netz.com/*/index.php?pageid=21311*",
+                "https://schul-netz.com/*/index.php?pageid=21311*"
+            ],
+            "js": ["content.js"]
+        }
+    ]
+}
